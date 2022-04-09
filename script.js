@@ -58,18 +58,22 @@ function playGame(playerSelection, computerSelection) {
   }
 }
 
-let brk = false;
+function game() {
+  let brk = false;
 
-do {
-  let userInput1 = prompt("Please make your choice. Paper, rock or scissors?");
+  do {
+    let userInput1 = prompt("Please make your choice. Paper, rock or scissors?");
 
-  console.log(playGame(userInput1, computerPlay()));
+    console.log(playGame(userInput1, computerPlay()));
 
-  let userInput2 = confirm("Would you like to play again?");
+    let userInput2 = confirm("Would you like to play again?");
 
-  if (userInput2) {
-    brk = false;
-  } else {
-    brk = true;
-  }
-} while (brk === false);
+    if (userInput2) {
+      brk = false;
+    } else {
+      brk = true;
+    }
+  } while (brk === false);
+}
+
+game();
