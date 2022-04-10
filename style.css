@@ -1,0 +1,50 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+div {
+  text-align: center;
+}
+
+.btnContainer {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+.score-card {
+  background-color: lightslategray;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: pre-line;
+}
+
+.btn {
+  background-color: lightskyblue;
+  border:2px solid black;
+  border-radius: 5px;
+  width: 100px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover {
+  cursor:default;
+}
+
+.instructions {
+  margin: 50px auto;
+}
+
+.results {
+  margin: 50px auto;
+}
